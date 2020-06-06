@@ -1,0 +1,26 @@
+[Eagle]
+Version="09 06 01"
+Platform="Mac OS X"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+UsedLibraryUrn="urn:adsk.eagle:library:204"
+UsedLibraryUrn="urn:adsk.eagle:library:252"
+UsedLibraryUrn="urn:adsk.eagle:library:259"
+UsedLibraryUrn="urn:adsk.eagle:library:334"
+UsedLibraryUrn="urn:adsk.eagle:library:371"
+UsedLibraryUrn="urn:adsk.eagle:library:375"
+UsedLibraryUrn="urn:adsk.eagle:library:147"
+UsedLibrary="/Users/jan/Documents/EAGLE/libraries/1284p.rpt.lbr"
+UsedLibrary="/Users/jan/Documents/EAGLE/libraries/connector.lbr"
+UsedLibrary="/Users/jan/Documents/EAGLE/libraries/switch.lbr"
+
+[Win_1]
+Type="Control Panel"
+Number=0
+
+[Desktop]
+Screen="6144 2160"
+Window="Win_1"
