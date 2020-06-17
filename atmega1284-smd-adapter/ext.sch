@@ -167,60 +167,6 @@
 <rectangle x1="-3.4" y1="4.95" x2="-3" y2="6.1001" layer="51"/>
 <rectangle x1="-4.1999" y1="4.95" x2="-3.8001" y2="6.1001" layer="51"/>
 </package>
-<package name="TQFP44-ADAPTER">
-<wire x1="-7.62" y1="8.89" x2="-7.62" y2="-16.51" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="-16.51" x2="17.78" y2="-16.51" width="0.127" layer="21"/>
-<wire x1="17.78" y1="-16.51" x2="17.78" y2="8.89" width="0.127" layer="21"/>
-<wire x1="17.78" y1="8.89" x2="-7.62" y2="8.89" width="0.127" layer="21"/>
-<pad name="P$1" x="-6.35" y="2.54" drill="0.6"/>
-<pad name="P$2" x="-3.81" y="2.54" drill="0.6"/>
-<pad name="P$3" x="-6.35" y="0" drill="0.6"/>
-<pad name="P$4" x="-3.81" y="0" drill="0.6"/>
-<pad name="P$5" x="-6.35" y="-2.54" drill="0.6"/>
-<pad name="P$6" x="-3.81" y="-2.54" drill="0.6"/>
-<pad name="P$7" x="-6.35" y="-5.08" drill="0.6"/>
-<pad name="P$8" x="-3.81" y="-5.08" drill="0.6"/>
-<pad name="P$9" x="-6.35" y="-7.62" drill="0.6"/>
-<pad name="P$10" x="-3.81" y="-7.62" drill="0.6"/>
-<pad name="P$11" x="-6.35" y="-10.16" drill="0.6"/>
-<pad name="P$12" x="-3.81" y="-10.16" drill="0.6"/>
-<pad name="P$13" x="-1.27" y="-15.24" drill="0.6"/>
-<pad name="P$14" x="-1.27" y="-12.7" drill="0.6"/>
-<pad name="P$15" x="1.27" y="-15.24" drill="0.6"/>
-<pad name="P$16" x="1.27" y="-12.7" drill="0.6"/>
-<pad name="P$17" x="3.81" y="-15.24" drill="0.6"/>
-<pad name="P$18" x="3.81" y="-12.7" drill="0.6"/>
-<pad name="P$19" x="6.35" y="-15.24" drill="0.6"/>
-<pad name="P$20" x="6.35" y="-12.7" drill="0.6"/>
-<pad name="P$21" x="8.89" y="-15.24" drill="0.6"/>
-<pad name="P$22" x="8.89" y="-12.7" drill="0.6"/>
-<pad name="P$23" x="11.43" y="-15.24" drill="0.6"/>
-<pad name="P$24" x="11.43" y="-12.7" drill="0.6"/>
-<pad name="P$25" x="16.51" y="-10.16" drill="0.6"/>
-<pad name="P$26" x="13.97" y="-10.16" drill="0.6"/>
-<pad name="P$27" x="16.51" y="-7.62" drill="0.6"/>
-<pad name="P$28" x="13.97" y="-7.62" drill="0.6"/>
-<pad name="P$29" x="16.51" y="-5.08" drill="0.6"/>
-<pad name="P$30" x="13.97" y="-5.08" drill="0.6"/>
-<pad name="P$31" x="16.51" y="-2.54" drill="0.6"/>
-<pad name="P$32" x="13.97" y="-2.54" drill="0.6"/>
-<pad name="P$33" x="16.51" y="0" drill="0.6"/>
-<pad name="P$34" x="13.97" y="0" drill="0.6"/>
-<pad name="P$35" x="16.51" y="2.54" drill="0.6"/>
-<pad name="P$36" x="13.97" y="2.54" drill="0.6"/>
-<pad name="P$37" x="11.43" y="7.62" drill="0.6"/>
-<pad name="P$38" x="11.43" y="5.08" drill="0.6"/>
-<pad name="P$39" x="8.89" y="7.62" drill="0.6"/>
-<pad name="P$40" x="8.89" y="5.08" drill="0.6"/>
-<pad name="P$41" x="6.35" y="7.62" drill="0.6"/>
-<pad name="P$42" x="6.35" y="5.08" drill="0.6"/>
-<pad name="P$43" x="3.81" y="7.62" drill="0.6"/>
-<pad name="P$44" x="3.81" y="5.08" drill="0.6"/>
-<pad name="P$45" x="1.27" y="7.62" drill="0.6"/>
-<pad name="P$46" x="1.27" y="5.08" drill="0.6"/>
-<pad name="P$47" x="-1.27" y="7.62" drill="0.6"/>
-<pad name="P$48" x="-1.27" y="5.08" drill="0.6"/>
-</package>
 </packages>
 <symbols>
 <symbol name="1284_44">
@@ -335,6 +281,172 @@
 </device>
 </devices>
 </deviceset>
+</devicesets>
+</library>
+<library name="supply1" urn="urn:adsk.eagle:library:371">
+<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
+ GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
+ Please keep in mind, that these devices are necessary for the
+ automatic wiring of the supply signals.&lt;p&gt;
+ The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
+ In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
+ &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="GND" urn="urn:adsk.eagle:symbol:26925/1" library_version="1">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="VCC" urn="urn:adsk.eagle:symbol:26928/1" library_version="1">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="VCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GND" urn="urn:adsk.eagle:component:26954/1" prefix="GND" library_version="1">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VCC" urn="urn:adsk.eagle:component:26957/1" prefix="P+" library_version="1">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="VCC" symbol="VCC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="mega1284p">
+<packages>
+<package name="TQFP44-ADAPTER">
+<wire x1="-7.62" y1="8.89" x2="-7.62" y2="-16.51" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-16.51" x2="17.78" y2="-16.51" width="0.127" layer="21"/>
+<wire x1="17.78" y1="-16.51" x2="17.78" y2="8.89" width="0.127" layer="21"/>
+<wire x1="17.78" y1="8.89" x2="-7.62" y2="8.89" width="0.127" layer="21"/>
+<pad name="P$1" x="-6.35" y="2.54" drill="0.8"/>
+<pad name="P$2" x="-3.81" y="2.54" drill="0.8"/>
+<pad name="P$3" x="-6.35" y="0" drill="0.8"/>
+<pad name="P$4" x="-3.81" y="0" drill="0.8"/>
+<pad name="P$5" x="-6.35" y="-2.54" drill="0.8"/>
+<pad name="P$6" x="-3.81" y="-2.54" drill="0.8"/>
+<pad name="P$7" x="-6.35" y="-5.08" drill="0.8"/>
+<pad name="P$8" x="-3.81" y="-5.08" drill="0.8"/>
+<pad name="P$9" x="-6.35" y="-7.62" drill="0.8"/>
+<pad name="P$10" x="-3.81" y="-7.62" drill="0.8"/>
+<pad name="P$11" x="-6.35" y="-10.16" drill="0.8"/>
+<pad name="P$12" x="-3.81" y="-10.16" drill="0.8"/>
+<pad name="P$13" x="-1.27" y="-15.24" drill="0.8"/>
+<pad name="P$14" x="-1.27" y="-12.7" drill="0.8"/>
+<pad name="P$15" x="1.27" y="-15.24" drill="0.8"/>
+<pad name="P$16" x="1.27" y="-12.7" drill="0.8"/>
+<pad name="P$17" x="3.81" y="-15.24" drill="0.8"/>
+<pad name="P$18" x="3.81" y="-12.7" drill="0.8"/>
+<pad name="P$19" x="6.35" y="-15.24" drill="0.8"/>
+<pad name="P$20" x="6.35" y="-12.7" drill="0.8"/>
+<pad name="P$21" x="8.89" y="-15.24" drill="0.8"/>
+<pad name="P$22" x="8.89" y="-12.7" drill="0.8"/>
+<pad name="P$23" x="11.43" y="-15.24" drill="0.8"/>
+<pad name="P$24" x="11.43" y="-12.7" drill="0.8"/>
+<pad name="P$25" x="16.51" y="-10.16" drill="0.8"/>
+<pad name="P$26" x="13.97" y="-10.16" drill="0.8"/>
+<pad name="P$27" x="16.51" y="-7.62" drill="0.8"/>
+<pad name="P$28" x="13.97" y="-7.62" drill="0.8"/>
+<pad name="P$29" x="16.51" y="-5.08" drill="0.8"/>
+<pad name="P$30" x="13.97" y="-5.08" drill="0.8"/>
+<pad name="P$31" x="16.51" y="-2.54" drill="0.8"/>
+<pad name="P$32" x="13.97" y="-2.54" drill="0.8"/>
+<pad name="P$33" x="16.51" y="0" drill="0.8"/>
+<pad name="P$34" x="13.97" y="0" drill="0.8"/>
+<pad name="P$35" x="16.51" y="2.54" drill="0.8"/>
+<pad name="P$36" x="13.97" y="2.54" drill="0.8"/>
+<pad name="P$37" x="11.43" y="7.62" drill="0.8"/>
+<pad name="P$38" x="11.43" y="5.08" drill="0.8"/>
+<pad name="P$39" x="8.89" y="7.62" drill="0.8"/>
+<pad name="P$40" x="8.89" y="5.08" drill="0.8"/>
+<pad name="P$41" x="6.35" y="7.62" drill="0.8"/>
+<pad name="P$42" x="6.35" y="5.08" drill="0.8"/>
+<pad name="P$43" x="3.81" y="7.62" drill="0.8"/>
+<pad name="P$44" x="3.81" y="5.08" drill="0.8"/>
+<pad name="P$45" x="1.27" y="7.62" drill="0.8"/>
+<pad name="P$46" x="1.27" y="5.08" drill="0.8"/>
+<pad name="P$47" x="-1.27" y="7.62" drill="0.8"/>
+<pad name="P$48" x="-1.27" y="5.08" drill="0.8"/>
+</package>
+</packages>
+<symbols>
+<symbol name="1284_44">
+<wire x1="-17.78" y1="45.72" x2="17.78" y2="45.72" width="0.254" layer="94"/>
+<wire x1="17.78" y1="45.72" x2="17.78" y2="-45.72" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-45.72" x2="-17.78" y2="-45.72" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-45.72" x2="-17.78" y2="45.72" width="0.254" layer="94"/>
+<text x="-15.24" y="45.72" size="1.27" layer="95">&gt;NAME</text>
+<text x="10.16" y="45.72" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="ADC7/PCINT7" x="22.86" y="25.4" length="middle" rot="R180"/>
+<pin name="ADC6/PCINT6" x="22.86" y="27.94" length="middle" rot="R180"/>
+<pin name="ADC5/PCINT5" x="22.86" y="30.48" length="middle" rot="R180"/>
+<pin name="ADC4/PCINT4" x="22.86" y="33.02" length="middle" rot="R180"/>
+<pin name="ADC3/PCINT3" x="22.86" y="35.56" length="middle" rot="R180"/>
+<pin name="ADC2/PCINT2" x="22.86" y="38.1" length="middle" rot="R180"/>
+<pin name="ADC1/PCINT1" x="22.86" y="40.64" length="middle" rot="R180"/>
+<pin name="ADC0/PCINT0" x="22.86" y="43.18" length="middle" rot="R180"/>
+<pin name="GND@1" x="-22.86" y="-38.1" length="middle"/>
+<pin name="OC2A/PCINT31" x="22.86" y="-43.18" length="middle" rot="R180"/>
+<pin name="OC2B/ICP/PCINT30" x="22.86" y="-40.64" length="middle" rot="R180"/>
+<pin name="OC1A/PCINT29" x="22.86" y="-38.1" length="middle" rot="R180"/>
+<pin name="XCK1/OC1B/PCINT28" x="22.86" y="-35.56" length="middle" rot="R180"/>
+<pin name="TXD1/INT1/PCINT27" x="22.86" y="-33.02" length="middle" rot="R180"/>
+<pin name="RXD1/INT0/PCINT26" x="22.86" y="-30.48" length="middle" rot="R180"/>
+<pin name="T3/RXD0/PCINT24" x="22.86" y="-25.4" length="middle" rot="R180"/>
+<pin name="XTAL1" x="-22.86" y="-2.54" length="middle"/>
+<pin name="XTAL2" x="-22.86" y="-12.7" length="middle"/>
+<pin name="VCC@0" x="-22.86" y="43.18" length="middle"/>
+<pin name="RESET" x="-22.86" y="25.4" length="middle"/>
+<pin name="TOSC2/PCINT23" x="22.86" y="-20.32" length="middle" rot="R180"/>
+<pin name="TOSC1/PCINT22" x="22.86" y="-17.78" length="middle" rot="R180"/>
+<pin name="TDI/PCINT21" x="22.86" y="-15.24" length="middle" rot="R180"/>
+<pin name="TDO/PCINT20" x="22.86" y="-12.7" length="middle" rot="R180"/>
+<pin name="TMS/PCINT19" x="22.86" y="-10.16" length="middle" rot="R180"/>
+<pin name="TCK/PCINT18" x="22.86" y="-7.62" length="middle" rot="R180"/>
+<pin name="SDA/PCINT17" x="22.86" y="-5.08" length="middle" rot="R180"/>
+<pin name="SCL/PCINT16" x="22.86" y="-2.54" length="middle" rot="R180"/>
+<pin name="SCK/OC3B/PCINT15" x="22.86" y="2.54" length="middle" rot="R180"/>
+<pin name="MISO/OC3A/PCINT14" x="22.86" y="5.08" length="middle" rot="R180"/>
+<pin name="MOSI/ICP3/PCINT13" x="22.86" y="7.62" length="middle" rot="R180"/>
+<pin name="SS/OC0B/PCINT12" x="22.86" y="10.16" length="middle" rot="R180"/>
+<pin name="AIN1/OC0A/PCINT11" x="22.86" y="12.7" length="middle" rot="R180"/>
+<pin name="AIN0/INT2/PCINT10" x="22.86" y="15.24" length="middle" rot="R180"/>
+<pin name="T1/CLK0/PCINT9" x="22.86" y="17.78" length="middle" rot="R180"/>
+<pin name="T0/XCK0/PCINT8" x="22.86" y="20.32" length="middle" rot="R180"/>
+<pin name="GND@0" x="-22.86" y="-35.56" length="middle"/>
+<pin name="AVCC" x="-22.86" y="33.02" length="middle"/>
+<pin name="AREF" x="-22.86" y="30.48" length="middle"/>
+<pin name="TXD0/PCINT25" x="22.86" y="-27.94" length="middle" rot="R180"/>
+<pin name="GND@2" x="-22.86" y="-40.64" length="middle"/>
+<pin name="GND@3" x="-22.86" y="-43.18" length="middle"/>
+<pin name="VCC@1" x="-22.86" y="40.64" length="middle"/>
+<pin name="VCC@2" x="-22.86" y="38.1" length="middle"/>
+</symbol>
+</symbols>
+<devicesets>
 <deviceset name="MEGA1284P_ADAPTER">
 <gates>
 <gate name="G$1" symbol="1284_44" x="0" y="0"/>
@@ -395,58 +507,6 @@
 </deviceset>
 </devicesets>
 </library>
-<library name="supply1" urn="urn:adsk.eagle:library:371">
-<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
- GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
- Please keep in mind, that these devices are necessary for the
- automatic wiring of the supply signals.&lt;p&gt;
- The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
- In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
- &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-</packages>
-<symbols>
-<symbol name="GND" urn="urn:adsk.eagle:symbol:26925/1" library_version="1">
-<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
-<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-</symbol>
-<symbol name="VCC" urn="urn:adsk.eagle:symbol:26928/1" library_version="1">
-<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
-<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="VCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="GND" urn="urn:adsk.eagle:component:26954/1" prefix="GND" library_version="1">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="GND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="VCC" urn="urn:adsk.eagle:component:26957/1" prefix="P+" library_version="1">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="VCC" symbol="VCC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -458,7 +518,7 @@
 </classes>
 <parts>
 <part name="U$1" library="1284p.rpt" deviceset="MEGA1284P_TQFP" device=""/>
-<part name="U$3" library="1284p.rpt" deviceset="MEGA1284P_ADAPTER" device=""/>
+<part name="U$3" library="mega1284p" deviceset="MEGA1284P_ADAPTER" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>

@@ -167,60 +167,6 @@
 <rectangle x1="-3.4" y1="4.95" x2="-3" y2="6.1001" layer="51"/>
 <rectangle x1="-4.1999" y1="4.95" x2="-3.8001" y2="6.1001" layer="51"/>
 </package>
-<package name="TQFP44-ADAPTER">
-<wire x1="-7.62" y1="8.89" x2="-7.62" y2="-16.51" width="0.127" layer="21"/>
-<wire x1="-7.62" y1="-16.51" x2="17.78" y2="-16.51" width="0.127" layer="21"/>
-<wire x1="17.78" y1="-16.51" x2="17.78" y2="8.89" width="0.127" layer="21"/>
-<wire x1="17.78" y1="8.89" x2="-7.62" y2="8.89" width="0.127" layer="21"/>
-<pad name="P$1" x="-6.35" y="2.54" drill="0.6"/>
-<pad name="P$2" x="-3.81" y="2.54" drill="0.6"/>
-<pad name="P$3" x="-6.35" y="0" drill="0.6"/>
-<pad name="P$4" x="-3.81" y="0" drill="0.6"/>
-<pad name="P$5" x="-6.35" y="-2.54" drill="0.6"/>
-<pad name="P$6" x="-3.81" y="-2.54" drill="0.6"/>
-<pad name="P$7" x="-6.35" y="-5.08" drill="0.6"/>
-<pad name="P$8" x="-3.81" y="-5.08" drill="0.6"/>
-<pad name="P$9" x="-6.35" y="-7.62" drill="0.6"/>
-<pad name="P$10" x="-3.81" y="-7.62" drill="0.6"/>
-<pad name="P$11" x="-6.35" y="-10.16" drill="0.6"/>
-<pad name="P$12" x="-3.81" y="-10.16" drill="0.6"/>
-<pad name="P$13" x="-1.27" y="-15.24" drill="0.6"/>
-<pad name="P$14" x="-1.27" y="-12.7" drill="0.6"/>
-<pad name="P$15" x="1.27" y="-15.24" drill="0.6"/>
-<pad name="P$16" x="1.27" y="-12.7" drill="0.6"/>
-<pad name="P$17" x="3.81" y="-15.24" drill="0.6"/>
-<pad name="P$18" x="3.81" y="-12.7" drill="0.6"/>
-<pad name="P$19" x="6.35" y="-15.24" drill="0.6"/>
-<pad name="P$20" x="6.35" y="-12.7" drill="0.6"/>
-<pad name="P$21" x="8.89" y="-15.24" drill="0.6"/>
-<pad name="P$22" x="8.89" y="-12.7" drill="0.6"/>
-<pad name="P$23" x="11.43" y="-15.24" drill="0.6"/>
-<pad name="P$24" x="11.43" y="-12.7" drill="0.6"/>
-<pad name="P$25" x="16.51" y="-10.16" drill="0.6"/>
-<pad name="P$26" x="13.97" y="-10.16" drill="0.6"/>
-<pad name="P$27" x="16.51" y="-7.62" drill="0.6"/>
-<pad name="P$28" x="13.97" y="-7.62" drill="0.6"/>
-<pad name="P$29" x="16.51" y="-5.08" drill="0.6"/>
-<pad name="P$30" x="13.97" y="-5.08" drill="0.6"/>
-<pad name="P$31" x="16.51" y="-2.54" drill="0.6"/>
-<pad name="P$32" x="13.97" y="-2.54" drill="0.6"/>
-<pad name="P$33" x="16.51" y="0" drill="0.6"/>
-<pad name="P$34" x="13.97" y="0" drill="0.6"/>
-<pad name="P$35" x="16.51" y="2.54" drill="0.6"/>
-<pad name="P$36" x="13.97" y="2.54" drill="0.6"/>
-<pad name="P$37" x="11.43" y="7.62" drill="0.6"/>
-<pad name="P$38" x="11.43" y="5.08" drill="0.6"/>
-<pad name="P$39" x="8.89" y="7.62" drill="0.6"/>
-<pad name="P$40" x="8.89" y="5.08" drill="0.6"/>
-<pad name="P$41" x="6.35" y="7.62" drill="0.6"/>
-<pad name="P$42" x="6.35" y="5.08" drill="0.6"/>
-<pad name="P$43" x="3.81" y="7.62" drill="0.6"/>
-<pad name="P$44" x="3.81" y="5.08" drill="0.6"/>
-<pad name="P$45" x="1.27" y="7.62" drill="0.6"/>
-<pad name="P$46" x="1.27" y="5.08" drill="0.6"/>
-<pad name="P$47" x="-1.27" y="7.62" drill="0.6"/>
-<pad name="P$48" x="-1.27" y="5.08" drill="0.6"/>
-</package>
 </packages>
 <symbols>
 <symbol name="1284_44">
@@ -328,64 +274,6 @@
 <connect gate="G$1" pin="XCK1/OC1B/PCINT28" pad="13"/>
 <connect gate="G$1" pin="XTAL1" pad="8"/>
 <connect gate="G$1" pin="XTAL2" pad="7"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MEGA1284P_ADAPTER">
-<gates>
-<gate name="G$1" symbol="1284_44" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TQFP44-ADAPTER">
-<connects>
-<connect gate="G$1" pin="ADC0/PCINT0" pad="P$40"/>
-<connect gate="G$1" pin="ADC1/PCINT1" pad="P$39"/>
-<connect gate="G$1" pin="ADC2/PCINT2" pad="P$38"/>
-<connect gate="G$1" pin="ADC3/PCINT3" pad="P$37"/>
-<connect gate="G$1" pin="ADC4/PCINT4" pad="P$35"/>
-<connect gate="G$1" pin="ADC5/PCINT5" pad="P$34"/>
-<connect gate="G$1" pin="ADC6/PCINT6" pad="P$33"/>
-<connect gate="G$1" pin="ADC7/PCINT7" pad="P$32"/>
-<connect gate="G$1" pin="AIN0/INT2/PCINT10" pad="P$45"/>
-<connect gate="G$1" pin="AIN1/OC0A/PCINT11" pad="P$46"/>
-<connect gate="G$1" pin="AREF" pad="P$31"/>
-<connect gate="G$1" pin="AVCC" pad="P$29"/>
-<connect gate="G$1" pin="GND@0" pad="P$6"/>
-<connect gate="G$1" pin="GND@1" pad="P$19"/>
-<connect gate="G$1" pin="GND@2" pad="P$30"/>
-<connect gate="G$1" pin="GND@3" pad="P$42"/>
-<connect gate="G$1" pin="MISO/OC3A/PCINT14" pad="P$2"/>
-<connect gate="G$1" pin="MOSI/ICP3/PCINT13" pad="P$1"/>
-<connect gate="G$1" pin="OC1A/PCINT29" pad="P$15"/>
-<connect gate="G$1" pin="OC2A/PCINT31" pad="P$17"/>
-<connect gate="G$1" pin="OC2B/ICP/PCINT30" pad="P$16"/>
-<connect gate="G$1" pin="RESET" pad="P$4"/>
-<connect gate="G$1" pin="RXD1/INT0/PCINT26" pad="P$11"/>
-<connect gate="G$1" pin="SCK/OC3B/PCINT15" pad="P$3"/>
-<connect gate="G$1" pin="SCL/PCINT16" pad="P$20"/>
-<connect gate="G$1" pin="SDA/PCINT17" pad="P$21"/>
-<connect gate="G$1" pin="SS/OC0B/PCINT12" pad="P$47"/>
-<connect gate="G$1" pin="T0/XCK0/PCINT8" pad="P$43"/>
-<connect gate="G$1" pin="T1/CLK0/PCINT9" pad="P$44"/>
-<connect gate="G$1" pin="T3/RXD0/PCINT24" pad="P$9"/>
-<connect gate="G$1" pin="TCK/PCINT18" pad="P$22"/>
-<connect gate="G$1" pin="TDI/PCINT21" pad="P$26"/>
-<connect gate="G$1" pin="TDO/PCINT20" pad="P$25"/>
-<connect gate="G$1" pin="TMS/PCINT19" pad="P$23"/>
-<connect gate="G$1" pin="TOSC1/PCINT22" pad="P$27"/>
-<connect gate="G$1" pin="TOSC2/PCINT23" pad="P$28"/>
-<connect gate="G$1" pin="TXD0/PCINT25" pad="P$10"/>
-<connect gate="G$1" pin="TXD1/INT1/PCINT27" pad="P$13"/>
-<connect gate="G$1" pin="VCC@0" pad="P$5"/>
-<connect gate="G$1" pin="VCC@1" pad="P$18"/>
-<connect gate="G$1" pin="VCC@2" pad="P$41"/>
-<connect gate="G$1" pin="XCK1/OC1B/PCINT28" pad="P$14"/>
-<connect gate="G$1" pin="XTAL1" pad="P$8"/>
-<connect gate="G$1" pin="XTAL2" pad="P$7"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -21295,6 +21183,178 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="mega1284p">
+<packages>
+<package name="TQFP44-ADAPTER">
+<wire x1="-7.62" y1="8.89" x2="-7.62" y2="-16.51" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-16.51" x2="17.78" y2="-16.51" width="0.127" layer="21"/>
+<wire x1="17.78" y1="-16.51" x2="17.78" y2="8.89" width="0.127" layer="21"/>
+<wire x1="17.78" y1="8.89" x2="-7.62" y2="8.89" width="0.127" layer="21"/>
+<pad name="P$1" x="-6.35" y="2.54" drill="0.8"/>
+<pad name="P$2" x="-3.81" y="2.54" drill="0.8"/>
+<pad name="P$3" x="-6.35" y="0" drill="0.8"/>
+<pad name="P$4" x="-3.81" y="0" drill="0.8"/>
+<pad name="P$5" x="-6.35" y="-2.54" drill="0.8"/>
+<pad name="P$6" x="-3.81" y="-2.54" drill="0.8"/>
+<pad name="P$7" x="-6.35" y="-5.08" drill="0.8"/>
+<pad name="P$8" x="-3.81" y="-5.08" drill="0.8"/>
+<pad name="P$9" x="-6.35" y="-7.62" drill="0.8"/>
+<pad name="P$10" x="-3.81" y="-7.62" drill="0.8"/>
+<pad name="P$11" x="-6.35" y="-10.16" drill="0.8"/>
+<pad name="P$12" x="-3.81" y="-10.16" drill="0.8"/>
+<pad name="P$13" x="-1.27" y="-15.24" drill="0.8"/>
+<pad name="P$14" x="-1.27" y="-12.7" drill="0.8"/>
+<pad name="P$15" x="1.27" y="-15.24" drill="0.8"/>
+<pad name="P$16" x="1.27" y="-12.7" drill="0.8"/>
+<pad name="P$17" x="3.81" y="-15.24" drill="0.8"/>
+<pad name="P$18" x="3.81" y="-12.7" drill="0.8"/>
+<pad name="P$19" x="6.35" y="-15.24" drill="0.8"/>
+<pad name="P$20" x="6.35" y="-12.7" drill="0.8"/>
+<pad name="P$21" x="8.89" y="-15.24" drill="0.8"/>
+<pad name="P$22" x="8.89" y="-12.7" drill="0.8"/>
+<pad name="P$23" x="11.43" y="-15.24" drill="0.8"/>
+<pad name="P$24" x="11.43" y="-12.7" drill="0.8"/>
+<pad name="P$25" x="16.51" y="-10.16" drill="0.8"/>
+<pad name="P$26" x="13.97" y="-10.16" drill="0.8"/>
+<pad name="P$27" x="16.51" y="-7.62" drill="0.8"/>
+<pad name="P$28" x="13.97" y="-7.62" drill="0.8"/>
+<pad name="P$29" x="16.51" y="-5.08" drill="0.8"/>
+<pad name="P$30" x="13.97" y="-5.08" drill="0.8"/>
+<pad name="P$31" x="16.51" y="-2.54" drill="0.8"/>
+<pad name="P$32" x="13.97" y="-2.54" drill="0.8"/>
+<pad name="P$33" x="16.51" y="0" drill="0.8"/>
+<pad name="P$34" x="13.97" y="0" drill="0.8"/>
+<pad name="P$35" x="16.51" y="2.54" drill="0.8"/>
+<pad name="P$36" x="13.97" y="2.54" drill="0.8"/>
+<pad name="P$37" x="11.43" y="7.62" drill="0.8"/>
+<pad name="P$38" x="11.43" y="5.08" drill="0.8"/>
+<pad name="P$39" x="8.89" y="7.62" drill="0.8"/>
+<pad name="P$40" x="8.89" y="5.08" drill="0.8"/>
+<pad name="P$41" x="6.35" y="7.62" drill="0.8"/>
+<pad name="P$42" x="6.35" y="5.08" drill="0.8"/>
+<pad name="P$43" x="3.81" y="7.62" drill="0.8"/>
+<pad name="P$44" x="3.81" y="5.08" drill="0.8"/>
+<pad name="P$45" x="1.27" y="7.62" drill="0.8"/>
+<pad name="P$46" x="1.27" y="5.08" drill="0.8"/>
+<pad name="P$47" x="-1.27" y="7.62" drill="0.8"/>
+<pad name="P$48" x="-1.27" y="5.08" drill="0.8"/>
+</package>
+</packages>
+<symbols>
+<symbol name="1284_44">
+<wire x1="-17.78" y1="45.72" x2="17.78" y2="45.72" width="0.254" layer="94"/>
+<wire x1="17.78" y1="45.72" x2="17.78" y2="-45.72" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-45.72" x2="-17.78" y2="-45.72" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-45.72" x2="-17.78" y2="45.72" width="0.254" layer="94"/>
+<text x="-15.24" y="45.72" size="1.27" layer="95">&gt;NAME</text>
+<text x="10.16" y="45.72" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="ADC7/PCINT7" x="22.86" y="25.4" length="middle" rot="R180"/>
+<pin name="ADC6/PCINT6" x="22.86" y="27.94" length="middle" rot="R180"/>
+<pin name="ADC5/PCINT5" x="22.86" y="30.48" length="middle" rot="R180"/>
+<pin name="ADC4/PCINT4" x="22.86" y="33.02" length="middle" rot="R180"/>
+<pin name="ADC3/PCINT3" x="22.86" y="35.56" length="middle" rot="R180"/>
+<pin name="ADC2/PCINT2" x="22.86" y="38.1" length="middle" rot="R180"/>
+<pin name="ADC1/PCINT1" x="22.86" y="40.64" length="middle" rot="R180"/>
+<pin name="ADC0/PCINT0" x="22.86" y="43.18" length="middle" rot="R180"/>
+<pin name="GND@1" x="-22.86" y="-38.1" length="middle"/>
+<pin name="OC2A/PCINT31" x="22.86" y="-43.18" length="middle" rot="R180"/>
+<pin name="OC2B/ICP/PCINT30" x="22.86" y="-40.64" length="middle" rot="R180"/>
+<pin name="OC1A/PCINT29" x="22.86" y="-38.1" length="middle" rot="R180"/>
+<pin name="XCK1/OC1B/PCINT28" x="22.86" y="-35.56" length="middle" rot="R180"/>
+<pin name="TXD1/INT1/PCINT27" x="22.86" y="-33.02" length="middle" rot="R180"/>
+<pin name="RXD1/INT0/PCINT26" x="22.86" y="-30.48" length="middle" rot="R180"/>
+<pin name="T3/RXD0/PCINT24" x="22.86" y="-25.4" length="middle" rot="R180"/>
+<pin name="XTAL1" x="-22.86" y="-2.54" length="middle"/>
+<pin name="XTAL2" x="-22.86" y="-12.7" length="middle"/>
+<pin name="VCC@0" x="-22.86" y="43.18" length="middle"/>
+<pin name="RESET" x="-22.86" y="25.4" length="middle"/>
+<pin name="TOSC2/PCINT23" x="22.86" y="-20.32" length="middle" rot="R180"/>
+<pin name="TOSC1/PCINT22" x="22.86" y="-17.78" length="middle" rot="R180"/>
+<pin name="TDI/PCINT21" x="22.86" y="-15.24" length="middle" rot="R180"/>
+<pin name="TDO/PCINT20" x="22.86" y="-12.7" length="middle" rot="R180"/>
+<pin name="TMS/PCINT19" x="22.86" y="-10.16" length="middle" rot="R180"/>
+<pin name="TCK/PCINT18" x="22.86" y="-7.62" length="middle" rot="R180"/>
+<pin name="SDA/PCINT17" x="22.86" y="-5.08" length="middle" rot="R180"/>
+<pin name="SCL/PCINT16" x="22.86" y="-2.54" length="middle" rot="R180"/>
+<pin name="SCK/OC3B/PCINT15" x="22.86" y="2.54" length="middle" rot="R180"/>
+<pin name="MISO/OC3A/PCINT14" x="22.86" y="5.08" length="middle" rot="R180"/>
+<pin name="MOSI/ICP3/PCINT13" x="22.86" y="7.62" length="middle" rot="R180"/>
+<pin name="SS/OC0B/PCINT12" x="22.86" y="10.16" length="middle" rot="R180"/>
+<pin name="AIN1/OC0A/PCINT11" x="22.86" y="12.7" length="middle" rot="R180"/>
+<pin name="AIN0/INT2/PCINT10" x="22.86" y="15.24" length="middle" rot="R180"/>
+<pin name="T1/CLK0/PCINT9" x="22.86" y="17.78" length="middle" rot="R180"/>
+<pin name="T0/XCK0/PCINT8" x="22.86" y="20.32" length="middle" rot="R180"/>
+<pin name="GND@0" x="-22.86" y="-35.56" length="middle"/>
+<pin name="AVCC" x="-22.86" y="33.02" length="middle"/>
+<pin name="AREF" x="-22.86" y="30.48" length="middle"/>
+<pin name="TXD0/PCINT25" x="22.86" y="-27.94" length="middle" rot="R180"/>
+<pin name="GND@2" x="-22.86" y="-40.64" length="middle"/>
+<pin name="GND@3" x="-22.86" y="-43.18" length="middle"/>
+<pin name="VCC@1" x="-22.86" y="40.64" length="middle"/>
+<pin name="VCC@2" x="-22.86" y="38.1" length="middle"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MEGA1284P_ADAPTER">
+<gates>
+<gate name="G$1" symbol="1284_44" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TQFP44-ADAPTER">
+<connects>
+<connect gate="G$1" pin="ADC0/PCINT0" pad="P$40"/>
+<connect gate="G$1" pin="ADC1/PCINT1" pad="P$39"/>
+<connect gate="G$1" pin="ADC2/PCINT2" pad="P$38"/>
+<connect gate="G$1" pin="ADC3/PCINT3" pad="P$37"/>
+<connect gate="G$1" pin="ADC4/PCINT4" pad="P$35"/>
+<connect gate="G$1" pin="ADC5/PCINT5" pad="P$34"/>
+<connect gate="G$1" pin="ADC6/PCINT6" pad="P$33"/>
+<connect gate="G$1" pin="ADC7/PCINT7" pad="P$32"/>
+<connect gate="G$1" pin="AIN0/INT2/PCINT10" pad="P$45"/>
+<connect gate="G$1" pin="AIN1/OC0A/PCINT11" pad="P$46"/>
+<connect gate="G$1" pin="AREF" pad="P$31"/>
+<connect gate="G$1" pin="AVCC" pad="P$29"/>
+<connect gate="G$1" pin="GND@0" pad="P$6"/>
+<connect gate="G$1" pin="GND@1" pad="P$19"/>
+<connect gate="G$1" pin="GND@2" pad="P$30"/>
+<connect gate="G$1" pin="GND@3" pad="P$42"/>
+<connect gate="G$1" pin="MISO/OC3A/PCINT14" pad="P$2"/>
+<connect gate="G$1" pin="MOSI/ICP3/PCINT13" pad="P$1"/>
+<connect gate="G$1" pin="OC1A/PCINT29" pad="P$15"/>
+<connect gate="G$1" pin="OC2A/PCINT31" pad="P$17"/>
+<connect gate="G$1" pin="OC2B/ICP/PCINT30" pad="P$16"/>
+<connect gate="G$1" pin="RESET" pad="P$4"/>
+<connect gate="G$1" pin="RXD1/INT0/PCINT26" pad="P$11"/>
+<connect gate="G$1" pin="SCK/OC3B/PCINT15" pad="P$3"/>
+<connect gate="G$1" pin="SCL/PCINT16" pad="P$20"/>
+<connect gate="G$1" pin="SDA/PCINT17" pad="P$21"/>
+<connect gate="G$1" pin="SS/OC0B/PCINT12" pad="P$47"/>
+<connect gate="G$1" pin="T0/XCK0/PCINT8" pad="P$43"/>
+<connect gate="G$1" pin="T1/CLK0/PCINT9" pad="P$44"/>
+<connect gate="G$1" pin="T3/RXD0/PCINT24" pad="P$9"/>
+<connect gate="G$1" pin="TCK/PCINT18" pad="P$22"/>
+<connect gate="G$1" pin="TDI/PCINT21" pad="P$26"/>
+<connect gate="G$1" pin="TDO/PCINT20" pad="P$25"/>
+<connect gate="G$1" pin="TMS/PCINT19" pad="P$23"/>
+<connect gate="G$1" pin="TOSC1/PCINT22" pad="P$27"/>
+<connect gate="G$1" pin="TOSC2/PCINT23" pad="P$28"/>
+<connect gate="G$1" pin="TXD0/PCINT25" pad="P$10"/>
+<connect gate="G$1" pin="TXD1/INT1/PCINT27" pad="P$13"/>
+<connect gate="G$1" pin="VCC@0" pad="P$5"/>
+<connect gate="G$1" pin="VCC@1" pad="P$18"/>
+<connect gate="G$1" pin="VCC@2" pad="P$41"/>
+<connect gate="G$1" pin="XCK1/OC1B/PCINT28" pad="P$14"/>
+<connect gate="G$1" pin="XTAL1" pad="P$8"/>
+<connect gate="G$1" pin="XTAL2" pad="P$7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -21335,7 +21395,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.7k"/>
 <part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.7k"/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="U$3" library="1284p.rpt" deviceset="MEGA1284P_ADAPTER" device=""/>
+<part name="U$3" library="mega1284p" deviceset="MEGA1284P_ADAPTER" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="U$4" library="connector" deviceset="CON_DIL_2X3" device=""/>
