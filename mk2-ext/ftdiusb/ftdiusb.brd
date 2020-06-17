@@ -119,23 +119,23 @@
 <wire x1="29.21" y1="26.67" x2="29.21" y2="6.35" width="0.2032" layer="20"/>
 <wire x1="26.67" y1="3.81" x2="29.21" y2="6.35" width="0.2032" layer="20"/>
 <wire x1="26.67" y1="59.69" x2="29.21" y2="57.15" width="0.2032" layer="20"/>
-<text x="8.128" y="55.88" size="0.6096" layer="48" align="center-right">TX0</text>
-<text x="8.128" y="53.34" size="0.6096" layer="48" align="center-right">RX0</text>
-<text x="8.128" y="35.56" size="0.6096" layer="48" align="center-right">GND</text>
-<text x="8.128" y="33.02" size="0.6096" layer="48" align="center-right">VCC</text>
-<text x="8.128" y="30.48" size="0.6096" layer="48" align="center-right">TX1</text>
-<text x="8.128" y="27.94" size="0.6096" layer="48" align="center-right">RX1</text>
+<text x="8.382" y="55.88" size="0.8128" layer="48" font="fixed" align="center-right">TX0</text>
+<text x="8.382" y="53.34" size="0.8128" layer="48" font="fixed" align="center-right">RX0</text>
+<text x="8.382" y="35.56" size="0.8128" layer="48" font="fixed" align="center-right">GND</text>
+<text x="8.382" y="33.02" size="0.8128" layer="48" font="fixed" align="center-right">VCC</text>
+<text x="8.382" y="30.48" size="0.8128" layer="48" font="fixed" align="center-right">TX1</text>
+<text x="8.382" y="27.94" size="0.8128" layer="48" font="fixed" align="center-right">RX1</text>
 <wire x1="-1.27" y1="59.69" x2="-1.27" y2="3.81" width="0.2032" layer="20"/>
 <wire x1="29.21" y1="26.67" x2="13.97" y2="26.67" width="0.2032" layer="20"/>
 <wire x1="13.97" y1="26.67" x2="13.97" y2="39.37" width="0.2032" layer="20"/>
 <wire x1="13.97" y1="39.37" x2="29.21" y2="39.37" width="0.2032" layer="20"/>
-<text x="1.778" y="22.86" size="0.8128" layer="48" rot="R90" align="center">TX0</text>
-<text x="1.778" y="17.78" size="0.8128" layer="48" rot="R90" align="center">RX0</text>
-<text x="10.922" y="22.86" size="0.8128" layer="48" rot="R90" align="center">TX1</text>
-<text x="10.922" y="17.78" size="0.8128" layer="48" rot="R90" align="center">RX1</text>
-<text x="10.16" y="6.35" size="0.8128" layer="48" rot="R90" align="center">RX</text>
-<text x="1.27" y="6.35" size="0.8128" layer="48" rot="R90" align="center">TX</text>
-<text x="17.78" y="54.61" size="0.8128" layer="48" rot="R90" align="center">VCC OUT</text>
+<text x="1.778" y="22.86" size="1.016" layer="48" font="fixed" rot="R90" align="center">TX0</text>
+<text x="1.778" y="17.78" size="1.016" layer="48" font="fixed" rot="R90" align="center">RX0</text>
+<text x="10.922" y="22.86" size="1.016" layer="48" font="fixed" rot="R90" align="center">TX1</text>
+<text x="10.922" y="17.78" size="1.016" layer="48" font="fixed" rot="R90" align="center">RX1</text>
+<text x="10.16" y="6.35" size="1.016" layer="48" font="fixed" rot="R90" align="center">RX</text>
+<text x="1.27" y="6.35" size="1.016" layer="48" font="fixed" rot="R90" align="center">TX</text>
+<text x="17.78" y="54.61" size="1.016" layer="48" font="fixed" rot="R90" align="center">VCC OUT</text>
 </plain>
 <libraries>
 <library name="connector">
@@ -2963,14 +2963,14 @@ design rules under a new name.</description>
 <wire x1="16.349" y1="9.43" x2="11.144" y2="9.43" width="0.2032" layer="1"/>
 <wire x1="7.2898" y1="12.1158" x2="7.112" y2="11.938" width="0.2032" layer="1"/>
 <via x="7.112" y="11.938" extent="1-16" drill="0.35"/>
-<wire x1="7.112" y1="11.938" x2="7.62" y2="11.43" width="0.2032" layer="16"/>
-<wire x1="8.89" y1="11.43" x2="9.398" y2="11.938" width="0.2032" layer="16"/>
 <via x="9.398" y="11.938" extent="1-16" drill="0.35"/>
 <wire x1="11.144" y1="9.43" x2="9.906" y2="10.668" width="0.2032" layer="1"/>
 <wire x1="9.906" y1="10.668" x2="9.398" y2="11.176" width="0.2032" layer="1"/>
 <wire x1="9.398" y1="11.176" x2="9.398" y2="11.938" width="0.2032" layer="1"/>
 <wire x1="7.2898" y1="24.9682" x2="7.2898" y2="12.1158" width="0.2032" layer="1"/>
-<wire x1="7.62" y1="11.43" x2="8.89" y2="11.43" width="0.2032" layer="16"/>
+<wire x1="9.398" y1="11.938" x2="9.144" y2="12.192" width="0.2032" layer="16"/>
+<wire x1="7.112" y1="11.938" x2="7.366" y2="12.192" width="0.2032" layer="16"/>
+<wire x1="9.144" y1="12.192" x2="7.366" y2="12.192" width="0.2032" layer="16"/>
 <wire x1="11.85" y1="10.668" x2="9.906" y2="10.668" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$3">

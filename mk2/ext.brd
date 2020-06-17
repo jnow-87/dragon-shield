@@ -16,7 +16,7 @@
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
@@ -66,30 +66,29 @@
 <board>
 <plain>
 <wire x1="1.27" y1="0.762" x2="12.7" y2="0.762" width="0.2032" layer="20"/>
-<text x="7.62" y="52.578" size="0.6096" layer="48" align="center">TX0</text>
-<text x="7.62" y="50.038" size="0.6096" layer="48" align="center">RX0</text>
-<text x="7.62" y="47.498" size="0.6096" layer="48" align="center">SCL</text>
-<text x="7.62" y="44.958" size="0.6096" layer="48" align="center">SDA</text>
-<text x="7.62" y="42.418" size="0.6096" layer="48" align="center">MISO</text>
-<text x="7.62" y="39.878" size="0.6096" layer="48" align="center">MOSI</text>
-<text x="7.62" y="37.338" size="0.6096" layer="48" align="center">SCK</text>
-<text x="7.62" y="34.798" size="0.6096" layer="48" align="center">AIN0</text>
-<text x="7.62" y="32.258" size="0.6096" layer="48" align="center">GND</text>
-<text x="7.62" y="29.718" size="0.6096" layer="48" align="center">VCC</text>
-<text x="7.62" y="27.178" size="0.6096" layer="48" align="center">TX1</text>
-<text x="7.62" y="24.638" size="0.6096" layer="48" align="center">RX1</text>
-<text x="7.62" y="22.098" size="0.6096" layer="48" align="center">SCL</text>
-<text x="7.62" y="19.558" size="0.6096" layer="48" align="center">SDA</text>
-<text x="7.62" y="17.018" size="0.6096" layer="48" align="center">OC0A</text>
-<text x="7.62" y="14.478" size="0.6096" layer="48" align="center">OC0B</text>
-<text x="7.62" y="11.938" size="0.6096" layer="48" align="center">OC1A</text>
-<text x="7.62" y="9.398" size="0.6096" layer="48" align="center">OC1B</text>
-<text x="7.62" y="6.858" size="0.6096" layer="48" align="center">GND</text>
-<text x="7.62" y="4.318" size="0.6096" layer="48" align="center">VCC</text>
+<text x="7.62" y="52.832" size="0.8128" layer="48" font="fixed" align="center">TX0</text>
+<text x="7.62" y="50.292" size="0.8128" layer="48" font="fixed" align="center">RX0</text>
+<text x="7.62" y="47.752" size="0.8128" layer="48" font="fixed" align="center">SCL</text>
+<text x="7.62" y="45.212" size="0.8128" layer="48" font="fixed" align="center">SDA</text>
+<text x="7.62" y="42.672" size="0.8128" layer="48" font="fixed" align="center">MISO</text>
+<text x="7.62" y="40.132" size="0.8128" layer="48" font="fixed" align="center">MOSI</text>
+<text x="7.62" y="37.592" size="0.8128" layer="48" font="fixed" align="center">SCK</text>
+<text x="7.62" y="35.052" size="0.8128" layer="48" font="fixed" align="center">AIN0</text>
+<text x="7.62" y="32.512" size="0.8128" layer="48" font="fixed" align="center">GND</text>
+<text x="7.62" y="29.972" size="0.8128" layer="48" font="fixed" align="center">VCC</text>
+<text x="7.62" y="27.432" size="0.8128" layer="48" font="fixed" align="center">TX1</text>
+<text x="7.62" y="24.892" size="0.8128" layer="48" font="fixed" align="center">RX1</text>
+<text x="7.62" y="22.352" size="0.8128" layer="48" font="fixed" align="center">SCL</text>
+<text x="7.62" y="19.812" size="0.8128" layer="48" font="fixed" align="center">SDA</text>
+<text x="7.62" y="17.272" size="0.8128" layer="48" font="fixed" align="center">OC0A</text>
+<text x="7.62" y="14.732" size="0.8128" layer="48" font="fixed" align="center">OC0B</text>
+<text x="7.62" y="12.192" size="0.8128" layer="48" font="fixed" align="center">OC1A</text>
+<text x="7.62" y="9.652" size="0.8128" layer="48" font="fixed" align="center">OC1B</text>
+<text x="7.62" y="7.112" size="0.8128" layer="48" font="fixed" align="center">GND</text>
+<text x="7.62" y="4.572" size="0.8128" layer="48" font="fixed" align="center">VCC</text>
 <wire x1="1.27" y1="56.642" x2="12.7" y2="56.642" width="0.2032" layer="20"/>
 <wire x1="12.7" y1="56.642" x2="12.7" y2="0.762" width="0.2032" layer="20"/>
-<wire x1="1.27" y1="0.762" x2="1.27" y2="23.876" width="0.2032" layer="20"/>
-<wire x1="1.27" y1="23.876" x2="1.27" y2="56.642" width="0.2032" layer="20"/>
+<wire x1="1.27" y1="0.762" x2="1.27" y2="56.642" width="0.2032" layer="20"/>
 </plain>
 <libraries>
 <library name="connector">
