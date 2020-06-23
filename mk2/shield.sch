@@ -21639,7 +21639,8 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pinref part="RESET" gate="G$1" pin="1"/>
 <wire x1="-48.26" y1="106.68" x2="-50.8" y2="106.68" width="0.1524" layer="91"/>
 <junction x="-50.8" y="78.74"/>
-<wire x1="-50.8" y1="106.68" x2="-50.8" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="106.68" x2="-50.8" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="104.14" x2="-50.8" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="-50.8" y1="99.06" x2="-50.8" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="-45.72" y1="99.06" x2="-50.8" y2="99.06" width="0.1524" layer="91"/>
@@ -21647,6 +21648,9 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pinref part="AVR_POWER1" gate="G$1" pin="C"/>
 <wire x1="-50.8" y1="124.46" x2="-50.8" y2="106.68" width="0.1524" layer="91"/>
 <junction x="-50.8" y="106.68"/>
+<pinref part="RESET" gate="G$1" pin="2"/>
+<wire x1="-48.26" y1="104.14" x2="-50.8" y2="104.14" width="0.1524" layer="91"/>
+<junction x="-50.8" y="104.14"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND@0"/>
