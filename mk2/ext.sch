@@ -89,6 +89,24 @@
 <pad name="P$19" x="-2.54" y="-40.64" drill="0.8"/>
 <pad name="P$20" x="-2.54" y="-43.18" drill="0.8"/>
 </package>
+<package name="CON_DIL_2X2">
+<wire x1="-1.27" y1="2.54" x2="1.27" y2="2.54" width="0.127" layer="21"/>
+<wire x1="1.27" y1="2.54" x2="1.27" y2="0" width="0.127" layer="21"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="0" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="2.54" width="0.127" layer="21"/>
+<pad name="P$1" x="-1.27" y="2.54" drill="0.8"/>
+<pad name="P$2" x="-1.27" y="0" drill="0.8"/>
+<pad name="P$4" x="1.27" y="0" drill="0.8"/>
+<pad name="P$3" x="1.27" y="2.54" drill="0.8"/>
+<text x="-2.54" y="3.81" size="1.27" layer="25">&gt;Name</text>
+</package>
+<package name="CON_DIL_3">
+<wire x1="0" y1="-2.54" x2="0" y2="2.54" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="2.54" drill="0.8"/>
+<pad name="P$2" x="0" y="0" drill="0.8"/>
+<pad name="P$3" x="0" y="-2.54" drill="0.8"/>
+<text x="-2.54" y="3.81" size="1.27" layer="25">&gt;Name</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CON_SIDEW_20">
@@ -114,6 +132,24 @@
 <pin name="P$19" x="0" y="-25.4" length="middle" rot="R180"/>
 <pin name="P$20" x="0" y="-27.94" length="middle" rot="R180"/>
 <rectangle x1="0" y1="-30.48" x2="2.54" y2="22.86" layer="94"/>
+</symbol>
+<symbol name="CON_2X2">
+<wire x1="0" y1="5.08" x2="12.7" y2="5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="5.08" x2="12.7" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="5.08" width="0.254" layer="94"/>
+<text x="2.54" y="5.08" size="1.778" layer="95">&gt;Name</text>
+<pin name="P$1" x="-5.08" y="2.54" length="middle"/>
+<pin name="P$2" x="-5.08" y="0" length="middle"/>
+<pin name="P$4" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="P$3" x="17.78" y="2.54" length="middle" rot="R180"/>
+</symbol>
+<symbol name="CON_SIDEW_3">
+<text x="-2.54" y="5.08" size="1.27" layer="95">&gt;Name</text>
+<rectangle x1="0" y1="-5.08" x2="2.54" y2="5.08" layer="94"/>
+<pin name="P$1" x="-5.08" y="2.54" length="middle"/>
+<pin name="P$2" x="-5.08" y="0" length="middle"/>
+<pin name="P$3" x="-5.08" y="-2.54" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -151,6 +187,41 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="CON_DIL_2X2">
+<gates>
+<gate name="G$2" symbol="CON_2X2" x="-5.08" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="CON_DIL_2X2">
+<connects>
+<connect gate="G$2" pin="P$1" pad="P$1"/>
+<connect gate="G$2" pin="P$2" pad="P$2"/>
+<connect gate="G$2" pin="P$3" pad="P$3"/>
+<connect gate="G$2" pin="P$4" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CON_DIL_3">
+<gates>
+<gate name="G$1" symbol="CON_SIDEW_3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CON_DIL_3">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -166,6 +237,9 @@
 <part name="EXT" library="connector" deviceset="CON_DIL_20" device=""/>
 <part name="EXT1" library="connector" deviceset="CON_DIL_20" device=""/>
 <part name="EXT2" library="connector" deviceset="CON_DIL_20" device=""/>
+<part name="U$1" library="connector" deviceset="CON_DIL_2X2" device=""/>
+<part name="U$2" library="connector" deviceset="CON_DIL_3" device=""/>
+<part name="U$3" library="connector" deviceset="CON_DIL_3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -181,6 +255,15 @@
 <instance part="EXT2" gate="G$1" x="68.58" y="33.02" smashed="yes">
 <attribute name="NAME" x="71.12" y="55.88" size="1.778" layer="95" rot="MR0"/>
 </instance>
+<instance part="U$1" gate="G$2" x="22.86" y="63.5" smashed="yes">
+<attribute name="NAME" x="25.4" y="68.58" size="1.778" layer="95"/>
+</instance>
+<instance part="U$2" gate="G$1" x="73.66" y="88.9" smashed="yes">
+<attribute name="NAME" x="71.12" y="93.98" size="1.27" layer="95"/>
+</instance>
+<instance part="U$3" gate="G$1" x="73.66" y="71.12" smashed="yes">
+<attribute name="NAME" x="71.12" y="76.2" size="1.27" layer="95"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -194,6 +277,11 @@
 <pinref part="EXT2" gate="G$1" pin="P$1"/>
 <wire x1="68.58" y1="53.34" x2="50.8" y2="53.34" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="P$1"/>
+<wire x1="68.58" y1="91.44" x2="63.5" y2="91.44" width="0.1524" layer="91"/>
+<label x="55.88" y="91.44" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="EXT_RX0" class="0">
 <segment>
@@ -203,6 +291,11 @@
 <pinref part="EXT1" gate="G$1" pin="P$2"/>
 <pinref part="EXT2" gate="G$1" pin="P$2"/>
 <wire x1="68.58" y1="50.8" x2="50.8" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="P$1"/>
+<wire x1="68.58" y1="73.66" x2="63.5" y2="73.66" width="0.1524" layer="91"/>
+<label x="55.88" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="EXT_SCL1" class="0">
@@ -265,26 +358,6 @@
 <wire x1="68.58" y1="35.56" x2="50.8" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="EXT_GND0" class="0">
-<segment>
-<pinref part="EXT" gate="G$1" pin="P$9"/>
-<label x="20.32" y="33.02" size="1.778" layer="95"/>
-<wire x1="50.8" y1="33.02" x2="12.7" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="EXT1" gate="G$1" pin="P$9"/>
-<pinref part="EXT2" gate="G$1" pin="P$9"/>
-<wire x1="68.58" y1="33.02" x2="50.8" y2="33.02" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="EXT_VCC0" class="0">
-<segment>
-<pinref part="EXT" gate="G$1" pin="P$10"/>
-<label x="20.32" y="30.48" size="1.778" layer="95"/>
-<wire x1="50.8" y1="30.48" x2="12.7" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="EXT1" gate="G$1" pin="P$10"/>
-<pinref part="EXT2" gate="G$1" pin="P$10"/>
-<wire x1="68.58" y1="30.48" x2="50.8" y2="30.48" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="EXT_TX1" class="0">
 <segment>
 <pinref part="EXT" gate="G$1" pin="P$11"/>
@@ -293,6 +366,11 @@
 <pinref part="EXT1" gate="G$1" pin="P$11"/>
 <pinref part="EXT2" gate="G$1" pin="P$11"/>
 <wire x1="68.58" y1="27.94" x2="50.8" y2="27.94" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="P$3"/>
+<wire x1="68.58" y1="86.36" x2="63.5" y2="86.36" width="0.1524" layer="91"/>
+<label x="55.88" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="EXT_RX1" class="0">
@@ -303,6 +381,11 @@
 <pinref part="EXT1" gate="G$1" pin="P$12"/>
 <pinref part="EXT2" gate="G$1" pin="P$12"/>
 <wire x1="68.58" y1="25.4" x2="50.8" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="P$3"/>
+<wire x1="68.58" y1="68.58" x2="63.5" y2="68.58" width="0.1524" layer="91"/>
+<label x="55.88" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="EXT_SCL0" class="0">
@@ -365,7 +448,36 @@
 <wire x1="68.58" y1="10.16" x2="50.8" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="EXT_GND1" class="0">
+<net name="TX" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="P$2"/>
+<wire x1="68.58" y1="88.9" x2="63.5" y2="88.9" width="0.1524" layer="91"/>
+<label x="55.88" y="88.9" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$2" pin="P$2"/>
+<wire x1="17.78" y1="63.5" x2="12.7" y2="63.5" width="0.1524" layer="91"/>
+<label x="12.7" y="63.5" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RX" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="P$2"/>
+<wire x1="68.58" y1="71.12" x2="63.5" y2="71.12" width="0.1524" layer="91"/>
+<label x="55.88" y="71.12" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$2" pin="P$1"/>
+<wire x1="17.78" y1="66.04" x2="12.7" y2="66.04" width="0.1524" layer="91"/>
+<label x="12.7" y="66.04" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="U$1" gate="G$2" pin="P$3"/>
+<wire x1="40.64" y1="66.04" x2="45.72" y2="66.04" width="0.1524" layer="91"/>
+<label x="43.18" y="66.04" size="1.778" layer="95"/>
+</segment>
 <segment>
 <pinref part="EXT" gate="G$1" pin="P$19"/>
 <label x="20.32" y="7.62" size="1.778" layer="95"/>
@@ -374,8 +486,21 @@
 <pinref part="EXT2" gate="G$1" pin="P$19"/>
 <wire x1="68.58" y1="7.62" x2="50.8" y2="7.62" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="EXT" gate="G$1" pin="P$9"/>
+<label x="20.32" y="33.02" size="1.778" layer="95"/>
+<wire x1="50.8" y1="33.02" x2="12.7" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="EXT1" gate="G$1" pin="P$9"/>
+<pinref part="EXT2" gate="G$1" pin="P$9"/>
+<wire x1="68.58" y1="33.02" x2="50.8" y2="33.02" width="0.1524" layer="91"/>
+</segment>
 </net>
-<net name="EXT_VCC1" class="0">
+<net name="VCC" class="0">
+<segment>
+<pinref part="U$1" gate="G$2" pin="P$4"/>
+<wire x1="40.64" y1="63.5" x2="45.72" y2="63.5" width="0.1524" layer="91"/>
+<label x="43.18" y="63.5" size="1.778" layer="95"/>
+</segment>
 <segment>
 <pinref part="EXT" gate="G$1" pin="P$20"/>
 <label x="20.32" y="5.08" size="1.778" layer="95"/>
@@ -383,6 +508,14 @@
 <pinref part="EXT1" gate="G$1" pin="P$20"/>
 <pinref part="EXT2" gate="G$1" pin="P$20"/>
 <wire x1="68.58" y1="5.08" x2="50.8" y2="5.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="EXT" gate="G$1" pin="P$10"/>
+<label x="20.32" y="30.48" size="1.778" layer="95"/>
+<wire x1="50.8" y1="30.48" x2="12.7" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="EXT1" gate="G$1" pin="P$10"/>
+<pinref part="EXT2" gate="G$1" pin="P$10"/>
+<wire x1="68.58" y1="30.48" x2="50.8" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
