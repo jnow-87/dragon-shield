@@ -1,7 +1,8 @@
-#include <avr/interrupt.h>
 #include <util/delay.h>
-#include <stdio.h>
+#include <mcu.h>
 #include <port.h>
+#include <uart.h>
+#include <watchdog.h>
 
 
 /* global functions */
@@ -10,17 +11,11 @@ int main(){
 	pin_t *pin;
 
 
-	/* configure mcu operation */
-	PRR = 0xff;
+	mcu_init();
+	ports_init();
+	watchdog_init();
 
-	// disable port pull-ups to avoid interfering
-	// with the input signal lines
-	MCUCR |= (0x1 << PUD);
-
-	/* configure hardware */
-	// i/o ports
-	for(i=0; i<num_ports; i++)
-		port_init(i);
+	uart_init();
 
 	while(1){
 		for(i=0; i<num_pins; i++){

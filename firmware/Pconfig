@@ -2,28 +2,79 @@
 # MCU
 #
 # {{{
-choice
-	prompt "Target MCU"
+menu "MCU"
+	choice
+		prompt "Target MCU"
 
-	config ATMEGA88
-		bool "Atmega88"
+		config ATMEGA88
+			bool "Atmega88"
 
-	config ATMEGA1284P
-		bool "Atmega1284P"
-endchoice
+		config ATMEGA1284P
+			bool "Atmega1284P"
+	endchoice
 
-config MCU_CLOCK_HZ
-	int "MCU clock [HZ]"
-	default 8000000
+	config MCU_CLOCK_HZ
+		int "MCU clock [HZ]"
+		default 8000000
 
-menu "Hidden"
-	visible if 0
+	choice
+		prompt "Watchdog timeout"
 
-	config MCU
-		string "MCU"
-		default "atmega88"		if ATMEGA88
-		default "atmega1284p"	if ATMEGA1284P
-		default "unknown MCU"
+		config WATCHDOG_TIMEOUT_16
+			bool "16ms"
+
+		config WATCHDOG_TIMEOUT_32
+			bool "32ms"
+
+		config WATCHDOG_TIMEOUT_64
+			bool "64ms"
+
+		config WATCHDOG_TIMEOUT_125
+			bool "125ms"
+
+		config WATCHDOG_TIMEOUT_250
+			bool "250ms"
+
+		config WATCHDOG_TIMEOUT_500
+			bool "500ms"
+
+		config WATCHDOG_TIMEOUT_1000
+			bool "1s"
+
+		config WATCHDOG_TIMEOUT_2000
+			bool "2s"
+
+		config WATCHDOG_TIMEOUT_4000
+			bool "4s"
+
+		config WATCHDOG_TIMEOUT_8000
+			bool "8s"
+	endchoice
+
+	menu "Hidden"
+		visible if 0
+
+		config MCU
+			string "MCU"
+			default "atmega88"		if ATMEGA88
+			default "atmega1284p"	if ATMEGA1284P
+			default "unknown MCU"
+
+		config WATCHDOG_TIMEOUT_MS
+			int "Watchdog timeout [ms]"
+			default 16		if WATCHDOG_TIMEOUT_16
+			default 32		if WATCHDOG_TIMEOUT_32
+			default 64		if WATCHDOG_TIMEOUT_64
+			default 125		if WATCHDOG_TIMEOUT_125
+			default 250		if WATCHDOG_TIMEOUT_250
+			default 500		if WATCHDOG_TIMEOUT_500
+			default 1000	if WATCHDOG_TIMEOUT_1000
+			default 2000	if WATCHDOG_TIMEOUT_2000
+			default 4000	if WATCHDOG_TIMEOUT_4000
+			default 8000	if WATCHDOG_TIMEOUT_8000
+	endmenu
+
+
 endmenu
 # }}}
 

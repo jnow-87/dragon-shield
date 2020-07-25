@@ -1,3 +1,4 @@
+#include <config/config.h>
 #include <avr/io.h>
 #include <port.h>
 
@@ -80,3 +81,12 @@ port_t ports[] = {
 
 uint8_t num_ports = (sizeof(ports) / sizeof((ports)[0])),
 		num_pins = (sizeof(pins) / sizeof((pins)[0]));
+
+
+/* global functions */
+void mcu_init(void){
+	/* power control */
+	PRR = 0xff;
+
+	PRR &= ~(0x1 << PRUSART0);
+}

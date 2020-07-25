@@ -1,8 +1,9 @@
+#include <config/config.h>
 #include <avr/interrupt.h>
 #include <util/delay.h>
-#include <stdio.h>
+#include <mcu.h>
 #include <port.h>
-#include <uart.h>
+#include <watchdog.h>
 
 
 /* local/static prototypes */
@@ -13,32 +14,12 @@ static int8_t lsb_set(uint8_t v);
 
 /* global functions */
 int main(){
-	uint8_t i;
+	mcu_init();
+	ports_init();
+	watchdog_init();
 
-
-	/* configure mcu operation */
-	PRR = 0xff;
-
-	// disable port pull-ups to avoid interfering
-	// with the input signal lines
-	MCUCR |= (0x1 << PUD);
-
-	/* configure hardware */
-	// uart
-	uart_init();
-
-	// i/o ports
-	for(i=0; i<num_ports; i++)
-		port_init(i);
-
-	// watchdog
-	WDTCSR = (0x1 << WDCE) | (0x1 << WDE);
-	WDTCSR = (0x1 << WDIE) | (0x4 << WDP0);
-
-	/* startup animation */
 	startup_anim();
 
-	/* enable interrupts */
 	sei();
 
 	while(1){

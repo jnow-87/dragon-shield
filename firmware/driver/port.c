@@ -1,9 +1,22 @@
 #include <avr/io.h>
 #include <stdint.h>
 #include <port.h>
+#include <mcu.h>
 
 
 /* global functions */
+void ports_init(void){
+	uint8_t i;
+
+
+	// disable port pull-ups to avoid interfering
+	// with the input signal lines
+	MCUCR |= (0x1 << PUD);
+
+	for(i=0; i<num_ports; i++)
+		port_init(i);
+}
+
 void port_init(port_num_t pnum){
 	uint8_t i,
 			pin_mask;

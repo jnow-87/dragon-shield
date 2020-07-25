@@ -38,15 +38,8 @@ typedef struct{
 } port_t;
 
 
-/* external variables */
-extern port_regs_t port_regs[];
-extern pin_t pins[];
-extern port_t ports[];
-extern uint8_t num_ports,
-			   num_pins;
-
-
 /* prototypes */
+void ports_init(void);
 void port_init(port_num_t pnum);
 
 void pin_init(port_num_t pnum, uint8_t bit);

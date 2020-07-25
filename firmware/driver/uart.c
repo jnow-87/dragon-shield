@@ -9,23 +9,19 @@ static FILE uart_stdout = FDEV_SETUP_STREAM(uart_putchar, 0x0, _FDEV_SETUP_WRITE
 
 /* global functions */
 void uart_init(void){
-	/* enable uart */
-	PRR &= ~(0x1 << PRUSART0);
-
 	UCSR0A = 0x0;
 	UCSR0B = (0x0 << RXEN0)
 		   | (0x1 << TXEN0)
 		   ;
 
-	// set baudrate
-	UBRR0H = 0;
-	UBRR0L = 12;
-
-	// set csize, parity, stop bits
 	UCSR0C = (0x0 << UPM00)		// no partiy
 		   | (0x0 << USBS0)		// 1 stop bit
 		   | (0x3 << UCSZ00)	// 8 data bits
 		   ;
+
+	// baudrate
+	UBRR0H = 0;
+	UBRR0L = 12;
 
 	stdout = &uart_stdout;
 }

@@ -1,1 +1,1 @@
-obj-y := port.o uart.o
+obj-y := port.o uart.o watchdog.o
