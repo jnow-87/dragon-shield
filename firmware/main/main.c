@@ -41,7 +41,7 @@ static void startup_anim(void){
 	while(i >= 0){
 		pin = pins + i;
 		pin_set(pin->port, pin->bit, PIN_SET);
-		_delay_ms(10);
+		_delay_ms(CONFIG_FW_STARTANIM_LED_DELAY_MS);
 		pin_set(pin->port, pin->bit, PIN_CLEAR);
 
 		i += inc;
@@ -101,7 +101,7 @@ static void port_pin_change_isr(port_num_t pnum){
 
 		pin = port->out_pins[bit];
 		pin_set(pin->port, pin->bit, PIN_SET);
-		pin->delay = 1;
+		pin->delay = CONFIG_FW_LED_DELAY;
 	}
 }
 

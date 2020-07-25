@@ -24,7 +24,7 @@ int main(){
 		for(i=0; i<num_pins; i++){
 			pin = pins + i;
 			pin_set(pin->port, pin->bit, PIN_TOGGLE);
-			_delay_ms(1000);
+			_delay_ms(CONFIG_TEST_PIN_DELAY);
 		}
 	}
 }
