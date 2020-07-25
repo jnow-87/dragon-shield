@@ -86,26 +86,31 @@ endmenu
 # {{{
 menu "Application"
 	menu "Firmware"
+		config FW_STARTANIM
+			bool "Startup animation"
+			default y
+		
 		config FW_STARTANIM_LED_DELAY_MS
-		int "Startup animation interval [ms]"
-		default 10
-		help
-			Delay between switching leds within the startup animation
+			int "Startup animation interval [ms]"
+			default 10
+			depends on: FW_STARTANIM
+			help
+				Delay between switching leds within the startup animation
 
 		config FW_LED_DELAY
-		int "Led delay"
-		default 1
-		help
-			This option defines the number of watchdog timeouts to keep leds on once their
-			input pin has been triggered.
+			int "Led delay"
+			default 1
+			help
+				This option defines the number of watchdog timeouts to keep leds on once their
+				input pin has been triggered.
 	endmenu
 
 	menu "Test"
 		config TEST_PIN_DELAY
-		int "Pin trigger delay [ms]"
-		default 500
-		help
-			Delay between switching the output pins
+			int "Pin trigger delay [ms]"
+			default 500
+			help
+				Delay between switching the output pins
 	endmenu
 endmenu
 # }}}

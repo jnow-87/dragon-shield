@@ -4,6 +4,7 @@ bin-y := main.elf test.elf
 main-y := main.o driver/
 main-$(CONFIG_ATMEGA88) += atmega88.o
 main-$(CONFIG_ATMEGA1284P) += atmega1284p.o
+main-$(CONFIG_FW_STARTANIM) += stanim.o
 
 test-y := test.o driver/
 test-$(CONFIG_ATMEGA88) += atmega88.o

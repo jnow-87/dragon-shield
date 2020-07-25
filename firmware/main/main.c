@@ -1,13 +1,12 @@
 #include <config/config.h>
 #include <avr/interrupt.h>
-#include <util/delay.h>
 #include <mcu.h>
 #include <port.h>
 #include <watchdog.h>
+#include <stanim.h>
 
 
 /* local/static prototypes */
-static void startup_anim(void);
 static void port_pin_change_isr(port_num_t pnum);
 static int8_t lsb_set(uint8_t v);
 
@@ -18,7 +17,9 @@ int main(){
 	ports_init();
 	watchdog_init();
 
-	startup_anim();
+#ifdef CONFIG_FW_STARTANIM
+	startup_animation();
+#endif // CONFIG_FW_STARTANIM
 
 	sei();
 
@@ -29,30 +30,6 @@ int main(){
 
 
 /* local functions */
-static void startup_anim(void){
-	int8_t i,
-		   inc;
-	pin_t *pin;
-
-
-	i = 0;
-	inc = 1;
-
-	while(i >= 0){
-		pin = pins + i;
-		pin_set(pin->port, pin->bit, PIN_SET);
-		_delay_ms(CONFIG_FW_STARTANIM_LED_DELAY_MS);
-		pin_set(pin->port, pin->bit, PIN_CLEAR);
-
-		i += inc;
-
-		if(i >= num_pins){
-			i -= 2;
-			inc = -1;
-		}
-	}
-}
-
 SIGNAL(PCINT0_vect){
 	port_pin_change_isr(PORT_B);
 }
