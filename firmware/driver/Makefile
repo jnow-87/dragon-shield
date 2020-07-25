@@ -1,1 +1,4 @@
-obj-y := port.o uart.o watchdog.o
+obj-y := port.o watchdog.o
+
+
+obj-$(CONFIG_WART_EN) += uart.o

@@ -51,6 +51,10 @@ menu "MCU"
 			bool "8s"
 	endchoice
 
+	config UART_EN
+		bool "Enable uart"
+		default n
+
 	menu "Hidden"
 		visible if 0
 

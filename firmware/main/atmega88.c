@@ -88,5 +88,7 @@ void mcu_init(void){
 	/* power control */
 	PRR = 0xff;
 
+#ifdef CONFIG_UART_EN
 	PRR &= ~(0x1 << PRUSART0);
+#endif
 }

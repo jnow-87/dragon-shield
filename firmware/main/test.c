@@ -1,3 +1,4 @@
+#include <config/config.h>
 #include <util/delay.h>
 #include <mcu.h>
 #include <port.h>
@@ -15,7 +16,9 @@ int main(){
 	ports_init();
 	watchdog_init();
 
+#ifdef CONFIG_UART_EN
 	uart_init();
+#endif
 
 	while(1){
 		for(i=0; i<num_pins; i++){
